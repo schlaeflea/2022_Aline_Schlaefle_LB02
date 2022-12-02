@@ -1,5 +1,5 @@
 *{
-    font-family: "Cooper Black";
+    font-family: "Poppins";
 }
 body{
     margin: 0;
@@ -9,6 +9,9 @@ body{
     background-size: cover;
 }
 
+h1{
+    font-weight: bold;
+}
 .box{
     width:400px;
     padding: 30px;
