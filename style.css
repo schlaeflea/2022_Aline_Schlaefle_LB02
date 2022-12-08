@@ -1,19 +1,23 @@
 *{
-    font-family: "Poppins";
+    font-family: Poppins, sans-serif;
 }
 body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: #f3f2f0;
+    background: rgb(243, 242, 240);
+    background-image: url("bild1.jpg");
     background-size: cover;
 }
-
+img{
+    position: center;
+    width: 100px;
+}
 h1{
     font-weight: bold;
 }
 .box{
-    width:400px;
+    width:500px;
     padding: 30px;
     position: absolute;
     top: 50%;
@@ -32,7 +36,7 @@ h1{
 .box input[type="text"], .box input[type="password"]
 {
     border: 0;
-    background: #d9ccc3;
+    background: lightota;
     display: block;
     margin: 20px auto;
     border: 3px solid #f4f5f0;
@@ -40,7 +44,7 @@ h1{
     width: 100px;
     outline: none;
     color: #424953;
-    border-radius: 24px;
+    border-radius: 10px;
     transition: 0.25px;
 }
 
@@ -63,12 +67,14 @@ h1{
     padding: 14px 35px;
     outline: none;
     color: #f4f5f0;
-    border-radius: 24px;
+    border-radius: 10px;
     transition: 0.25px;
     cursor: pointer;
 }
 
 .box input[type="submit"]:hover{
-    background: #c4c9cd;
+    background: #dae0f1;
+    color: #424953;
+    font-weight: bold;
 }
 
