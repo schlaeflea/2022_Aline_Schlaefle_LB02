@@ -17,13 +17,13 @@ h1{
     font-weight: bold;
 }
 .box{
-    width:500px;
+    width:400px;
     padding: 30px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #424953;
+    background: rgba(66, 73, 83, 0.2);
     text-align: center;
 }
 

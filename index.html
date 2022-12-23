@@ -17,6 +17,20 @@
     <input type="text" name="" placeholder="Enter Username" id="username">
     <input type="password" name="" placeholder="Enter Password" id="password">
     <input type="submit" name="" value="Login" onclick="validate()">
+    <div class="captcha">
+        <label for="captcha-input">Enter Captcha</label>
+        <div class="preview"></div>
+        <div class="captcha-form">
+            <input type="text" id="captcha-form" placeholder="Enter captcha text">
+            <button class="captcha-refresh">
+            <i class="fa fa-refresh"></i>
+            </button>
+        </div>
+    </div>
+    <div class="form-input">
+        <button id="login-btn">Login</button>
+    </div>
+
 </form>
 </div>
 </body>
