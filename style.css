@@ -6,7 +6,7 @@ body{
     padding: 0;
     font-family: sans-serif;
     background: rgb(243, 242, 240);
-    background-image: url("bild1.jpg");
+    background-image: url("background2.jfif");
     background-size: cover;
 }
 img{
@@ -23,7 +23,6 @@ h1{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(66, 73, 83, 0.2);
     text-align: center;
 }
 
@@ -77,4 +76,5 @@ h1{
     color: #424953;
     font-weight: bold;
 }
+
 

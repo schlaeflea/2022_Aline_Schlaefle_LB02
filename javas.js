@@ -1,6 +1,6 @@
 function validate()
 {
-    var username=document.getElementById("username").value;
+    var username=document.getElementById("Email").value;
     var password=document.getElementById("password").value;
 
     if(username=="user"&& password=="password")
@@ -13,3 +13,7 @@ function validate()
         alert("login failed")
     }
 }
+
+let javascriptObj = {name: "John", age: 30};
+let jsonObj = JSON.stringify(javascriptObj);
+console.log(jsonObj);
