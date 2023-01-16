@@ -6,56 +6,32 @@
     <link rel="stylesheet" href="style.css">
     <script src="javas.js"></script>
     <script src="package.json"></script>
-
 </head>
+<ul class="navigation">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Home</a></li>
+</ul>
+
+
 <body>
-<div class=""container">
-    <form id="form" action="/">
-        <h1>Login</h1>
-        <div class="input-control" >
-            <label for="username">Username</label>
-            <input id="username" name="username" type="text">
-        </div>
-        <div class="input-control">
-            <label for="email">Email</label>
-            <input id="email" name="username" type="text">
-            <div class="error">
-            </div>
-        <div class="input-control">
-                <label for="password">Password</label>
-                <input id="password" name="password" type="password">
-                <div class="error">
-                </div>
-            <div class="input-control">
-                <label for="password">Password again</label>
-                <input id="password2" name="password2" type="password">
-                <div class="error">
-                </div>
-            <button type="submit">Login</button>
+<div>
+    <form class="box" action="index.html" method="post">
+        <img src="icon_account_white.png">
+        <h1>
+            Login
+        </h1>
+        <input type="email" name="" placeholder="Enter Username" id="email" required>
+        <input type="password" name="" placeholder="Enter Password" id="password" required>
+        <input type="submit" name="" value="Login" onclick="validate()">
+
     </form>
 </div>
 
-
-<!--<div>
-<form class="box" action="index.html" method="post">
-    <img src="icon_account_white.png">
-    <h1>
-        Login
-    </h1>
-    <input type="email" name="" placeholder="Enter Username" id="email" required>
-    <input type="password" name="" placeholder="Enter Password" id="password" required>
-    <input type="submit" name="" value="Login" onclick="validate()">
-
-    <div id="captcha"></div>
-        <script src="https://www.google.com/recaptcha/api.js"></script>
-       <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
-        <input type="submit" value="Absenden">
-    </form>
-
-
-</div> -->
+<footer>
+    <p>Aline Schläfle | © CopyRight </p>
+</footer>
 </body>
+
 </html>
-
-
-
