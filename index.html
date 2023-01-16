@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Aline Schläfle | LB02</title>
@@ -8,12 +8,11 @@
     <script src="package.json"></script>
 </head>
 <ul class="navigation">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About me</a></li>
-    <li><a href="#">Team</a></li>
-    <li><a href="#">Contact</a></li>
+    <li><a href="Einstiegsseite.html">Home</a></li>
+    <li><a href="Einstiegsseite.html">About me</a></li>
+    <li><a href="Einstiegsseite.html">Team</a></li>
+    <li><a href="Einstiegsseite.html">Contact</a></li>
 </ul>
-
 
 <body>
 <div>
@@ -24,8 +23,22 @@
         </h1>
         <input type="email" name="" placeholder="Enter Username" id="email" required>
         <input type="password" name="" placeholder="Enter Password" id="password" required>
-        <input type="submit" name="" value="Login" onclick="validate()">
+        <input type="submit" name="" value="Login" onclick="validate()" >
 
+
+        <!-- Einbindung Captcha -->
+        <link rel="stylesheet" type="text/css" href="estilo.css" />
+        <script type="text/javascript" src="script.js"></script>
+
+        <div onload="Captcha();">
+        <div class="capt">
+            <h2 type="text" id="mainCaptcha"></h2>
+            <p>Refresh Captcha</p>
+            <p><input type="button" id="refresh" placeholder="refresh" onclick="Captcha();"/></p>
+            <input type="text" id="txtInput"/>
+            <input id="Button1" type="button" value="Check" onclick="alert(ValidateCaptcha());"/>
+        </div>
+        </div>
     </form>
 </div>
 
