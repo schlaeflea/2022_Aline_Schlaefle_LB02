@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>LB02 Aline Schläfle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<ul class="navigation">
+    <li><a href="Einstiegsseite.html">Home</a></li>
+    <li><a href="Einstiegsseite.html">About me</a></li>
+    <li><a href="Einstiegsseite.html">Team</a></li>
+    <li><a href="Einstiegsseite.html">Contact</a></li>
+</ul>
+<body>
+<main>
+    <div id="formular" class="form-div">
+
+        <form>
+            <h1> LOGIN </h1>
+            <!-- NAME -->
+            <div class="login">
+                <label> Name*: </label>
+                <div class="spalte-rechts form-control">
+                    <input type="text" id="name">
+                    <small>Error Message</small>
+                </div>
+            </div>
+
+            <!-- NACHNAME -->
+            <div class="login">
+                <label>Nachname*:</label>
+                <div class="spalte-rechts form-control">
+                    <input id="nachname" type="text">
+                    <small>Error Message</small>
+                </div>
+            </div>
+
+            <!-- EMAIL -->
+            <div class="login">
+                <label> E-Mail*: </label>
+                <div class="spalte-rechts form-control">
+                    <input type="text" id="email">
+                    <small>Error Message</small>
+                </div>
+
+
+                <!-- BUTTON -->
+            </div>
+            <input id="button" type="submit" class="btn btn-primary" value="Abschicken">
+
+            <!-- Einbindung Captcha -->
+            <link rel="stylesheet" type="text/css" href="estilo.css" />
+            <script type="text/javascript" src="script.js"></script>
+
+            <div onload="Captcha();">
+                <div class="capt">
+                    <h2 type="text" id="mainCaptcha"></h2>
+                    <p>Refresh Captcha</p>
+                    <p><input type="button" id="refresh" placeholder="refresh" onclick="Captcha();"/></p>
+                    <input type="text" id="txtInput"/>
+                    <input id="Button1" type="button" value="Check" onclick="alert(ValidateCaptcha());"/>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</main>
+<footer>
+    <p>Aline Schläfle | © CopyRight </p>
+</footer>
+<script src="formular.js"></script>
+
+</body>
+</html>
