@@ -1,5 +1,5 @@
 
-//deklarieren der versch. input variables
+//erstellung versch. input variables
 const form = document.getElementById('formular');
 const Name = document.getElementById("name");
 const Nachname = document.getElementById("nachname");
@@ -77,7 +77,14 @@ function validateForm(){
         checkEmail(Email);
     }
 
+
     if (isValid == true) {
+        let kontaktdaten = {
+            Datenname: Name.value,
+            Datennachname: Nachname.value,
+            Datenemail: Email.value
+        }
+        window.localStorage.setItem(Nachname.value, JSON.stringify(kontaktdaten));
         alert(`Vielen Dank für deine Kontaktanfrage ${Name.value} ${Nachname.value} , ich werde mich bei Ihnen melden!`)
     }else {
         console.log("nicht abgeschickt!");
