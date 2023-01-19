@@ -3,6 +3,8 @@ body{
     background-image: url("assets/bild1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
+    background-color: #dadff2;
 }
 .navigation {
     display: flex;

@@ -6,6 +6,7 @@ const Nachname = document.getElementById("nachname");
 const Email = document.getElementById("email");
 let isValid = true;
 
+
 // Anzeigen der Fehlermeldung
 function showError(input, message) {
     isValid = false;
@@ -77,7 +78,7 @@ function validateForm(){
     }
 
     if (isValid == true) {
-        alert(`Herzlich Willkommen ${Name.value} ${Nachname.value} du bist nun eingeloggt`)
+        alert(`Vielen Dank für deine Kontaktanfrage ${Name.value} ${Nachname.value} , ich werde mich bei Ihnen melden!`)
     }else {
         console.log("nicht abgeschickt!");
         isValid = true;
@@ -89,7 +90,7 @@ form.addEventListener('submit', function(e) {
     validateForm();
 });
 
-
+// Captcha
 function Captcha(){
     var alpha = new Array('A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z',
         'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',
